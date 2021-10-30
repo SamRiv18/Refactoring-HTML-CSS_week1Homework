@@ -9,6 +9,16 @@
 body {
     background-color: #d9dcd6;
 }
+/* adds color and sets text decorstion to all a tags in the page */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* sets text size to all p tags in the page */
+p {
+    font-size: 16px;
+}
 
 /* Applies all of these styles to the class header, applys padding of 20px to all four sides */
 .header {
@@ -45,19 +55,8 @@ body {
     margin-left: 25px;
 }
 
-/* adds color and sets text decorstion to all a tags in the page */
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* sets text size to all p tags in the page */
-p {
-    font-size: 16px;
-}
-
 /* all the styles applied to the class hero in figure element. Adds a background image*/
-.hero {
+.hero_image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -66,10 +65,10 @@ p {
     background-position: center;
 }
 
-/* Combines classes that require the same styles applied to them. Deals with placement of images and texts within each respective section */
-.search-engine-optimization,
-.social-media-marketing,
-.online-reputation-management{
+/* Combines ids that require the same styles applied to them. Deals with placement of images and texts within each respective section */
+#search-engine-optimization,
+#social-media-marketing,
+#online-reputation-management{
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -77,6 +76,23 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+
+/* combines ids that require the same styles applied to them. Sets max height of all images to 200px*/
+#search-engine-optimization img,
+#online-reputation-management img,
+#social-media-marketing img
+{
+    max-height: 200px;
+}
+
+/* combines ids that require the same styles applied to them. Sets font size and bottom margin of h2 tags in the respective classes */
+#search-engine-optimization h2,
+#online-reputation-management h2,
+#social-media-marketing h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 
 /* sets image to float left of the text with a margin to the right of the image of 25px */
 .float-left {
@@ -109,47 +125,33 @@ p {
     background-color: #2589bd;
 }
 
-/* combines classes that require the same styles applied to them. Sets margin of 32px at the bottem and changes text color*/
-.benefit-lead,
-.benefit-brand,
-.benefit-cost{
+/* combines ids that require the same styles applied to them. Sets margin of 32px at the bottem and changes text color*/
+#benefit-lead,
+#benefit-brand,
+#benefit-cost{
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* combines classes that require the same styles applied to them. adds margin of 10px. Aligns heading text to the center of the box */
-.benefit-lead h3,
-.benefit-brand h3,
-.benefit-cost h3
+/* combines ids that require the same styles applied to them. adds margin of 10px. Aligns heading text to the center of the box */
+#benefit-lead h3,
+#benefit-brand h3,
+#benefit-cost h3
 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* combines classes that require the same styles applied to them. Sets palcement of the image and size */
-.benefit-lead img,
-.benefit-brand img,
-.benefit-cost img{
+/* combines ids that require the same styles applied to them. Sets palcement of the image and size */
+#benefit-lead img,
+#benefit-brand img,
+#benefit-cost img{
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* combines classes that require the same styles applied to them. Sets max height of all images to 200px*/
-.search-engine-optimization img,
-.online-reputation-management img,
-.social-media-marketing img
-{
-    max-height: 200px;
-}
 
-/* combines classes that require the same styles applied to them. Sets font size and bottom margin of h2 tags in the respective classes */
-.search-engine-optimization h2,
-.online-reputation-management h2,
-.social-media-marketing h2{
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 /* sets styles to the footer of the page */
 .footer {
