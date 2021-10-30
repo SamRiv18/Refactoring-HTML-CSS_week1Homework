@@ -1,29 +1,35 @@
-* {
+/* wild card, applies these styles to all the tags in the page. Unless it is overwitten*/
+* {       
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Adds background color to the page */
 body {
     background-color: #d9dcd6;
 }
 
+/* Applies all of these styles to the class header, applys padding of 20px to all four sides */
 .header {
-    padding: 20px;
+    padding: 20px;   
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
+/* Applies these styles to h1 element in the header class.*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* apply text color to class seo in h1 element within class header */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* applies these styles to the nav element in the header class */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +38,25 @@ body {
     font-size: 20px;
 }
 
-.header nav ul {
-    list-style-type: none;
-}
-
+/*combined style rules for ul and li. makes list items appear in an inline block instead of a list column, adds spacing to the left of each list item*/
 .header nav ul li {
+    list-style-type: none;
     display: inline-block;
     margin-left: 25px;
 }
 
+/* adds color and sets text decorstion to all a tags in the page */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* sets text size to all p tags in the page */
 p {
     font-size: 16px;
 }
 
+/* all the styles applied to the class hero in figure element. Adds a background image*/
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +66,38 @@ p {
     background-position: center;
 }
 
+/* Combines classes that require the same styles applied to them. Deals with placement of images and texts within each respective section */
+.search-engine-optimization,
+.social-media-marketing,
+.online-reputation-management{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* sets image to float left of the text with a margin to the right of the image of 25px */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* sets image to float right of the text with a margin to the right of the image of 25px */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* sets the parameters of everything inside the main element. Gives it the apperance of a box*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* applies all these style rules to  benefits class in aside element*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,108 +109,49 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* combines classes that require the same styles applied to them. Sets margin of 32px at the bottem and changes text color*/
+.benefit-lead,
+.benefit-brand,
+.benefit-cost{
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* combines classes that require the same styles applied to them. adds margin of 10px. Aligns heading text to the center of the box */
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3
+{
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* combines classes that require the same styles applied to them. Sets palcement of the image and size */
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img{
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* combines classes that require the same styles applied to them. Sets max height of all images to 200px*/
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img
+{
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* combines classes that require the same styles applied to them. Sets font size and bottom margin of h2 tags in the respective classes */
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2{
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* sets styles to the footer of the page */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +159,7 @@ p {
     text-align: center;
 }
 
+/* sets font size to h2 tag in the footer class to 20px */
 .footer h2 {
     font-size: 20px;
 }
