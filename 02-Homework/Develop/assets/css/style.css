@@ -56,10 +56,10 @@ p {
 }
 
 /* all the styles applied to the class hero in figure element. Adds a background image*/
-.hero_image {
+.marketing_meeting_image{
     height: 800px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
@@ -92,7 +92,6 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
 
 /* sets image to float left of the text with a margin to the right of the image of 25px */
 .float-left {
@@ -150,8 +149,6 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-
-
 
 /* sets styles to the footer of the page */
 .footer {
